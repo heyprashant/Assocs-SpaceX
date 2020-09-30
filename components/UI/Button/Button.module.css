@@ -1,0 +1,15 @@
+.btn {
+    background-color: lightgreen;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    margin: 10px 25px 10px 10px;
+}
+
+.active, .btn:hover {
+    background-color: green;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    margin: 5px 25px 5px 10px;
+}

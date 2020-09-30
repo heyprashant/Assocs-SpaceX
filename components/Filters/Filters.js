@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Card from '../UI/Card/Card';
+import LaunchYears from './LaunchYears/LaunchYears';
+import SuccessLaunch from './SuccessLaunch/SucessLaunch';
+import SuccessLanding from './SucessLanding/SucessLanding';
 
 class Filters extends Component {
     state = {
@@ -9,10 +13,12 @@ class Filters extends Component {
 
     render() {
         return (<div>
-            <p>Launchyears</p>
-            <p>SuccessLaunch</p>
-            <p>SuccessLanding</p>
-            
+            <Card>
+            <h2>Filters</h2>
+            <LaunchYears/>
+            <SuccessLaunch/>
+            <SuccessLanding/>
+            </Card>
         </div>);
     }
 }

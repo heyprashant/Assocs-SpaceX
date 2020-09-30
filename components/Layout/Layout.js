@@ -8,9 +8,14 @@ class Layout extends Component {
 
     render() {
         return (<div className = {styles.Layout} >
-            <h1>SpaceX Launch Programs</h1>
-            <Filters />
-            <LaunchPrograms />
+            <div><h1>SpaceX Launch Programs</h1></div>
+
+            <div className = {styles.body}>
+             <Filters /> 
+             <LaunchPrograms />
+             </div>
+
+             <div className={styles.footer}>Developed by : Prashant</div>
         </div>);
     }
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Card from '../UI/Card/Card';
 
 class LaunchPrograms extends Component {
     state = {
@@ -7,7 +8,9 @@ class LaunchPrograms extends Component {
 
     render() {
         return (<div>
+            <Card>
             <p>LaunchPrograms</p>
+            </Card>
         </div>);
     }
 }
