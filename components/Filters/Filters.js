@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card from '../UI/Card/Card';
+import styles from './Filters.module.css';
 import LaunchYears from './LaunchYears/LaunchYears';
 import SuccessLaunch from './SuccessLaunch/SucessLaunch';
 import SuccessLanding from './SucessLanding/SucessLanding';
@@ -12,13 +12,12 @@ class Filters extends Component {
     }
 
     render() {
-        return (<div>
-            <Card>
-            <h2>Filters</h2>
+        return (
+        <div className= {styles.container}>    
+            <h2 className={styles.header}>Filters</h2>
             <LaunchYears/>
             <SuccessLaunch/>
             <SuccessLanding/>
-            </Card>
         </div>);
     }
 }

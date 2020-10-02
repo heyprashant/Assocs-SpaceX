@@ -1,15 +1,27 @@
 .btn {
-    background-color: lightgreen;
+    background-color: #c5e09b;
     border-radius: 4px;
-    width: 100px;
-    height: 30px;
-    margin: 10px 25px 10px 10px;
+    border: honeydew;
+    margin: 5px;
+    margin-top: 12px;
+    justify-self: center;
+    width: 60%;
+    height: 27px;
+    color: black;
+    font-weight: normal;
+    font-size: medium;
 }
 
 .active, .btn:hover {
-    background-color: green;
+    background-color:#7cba01;
     border-radius: 4px;
-    width: 100px;
-    height: 30px;
-    margin: 5px 25px 5px 10px;
+    border: honeydew;
+    margin: 5px;
+    margin-top: 12px;
+    justify-self: center;
+    width: 60%;
+    height: 27px;
+    color: black;
+    font-weight: normal;
+    font-size: medium;
 }

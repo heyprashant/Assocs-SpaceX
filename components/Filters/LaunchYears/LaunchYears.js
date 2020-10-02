@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Button from '../../UI/Button/Button';
-import Styles from './LaunchYears.module.css'
+import styles from './LaunchYears.module.css'
 
 class LaunchYears extends Component {
     state={
@@ -16,11 +16,16 @@ class LaunchYears extends Component {
         for(let i=2006; i<=2020; i++) {
             years.push(i);
         }
+        
         let launchYears = years.map( year => <Button name={year} onClicked={()=> this.onClickHandler(year)} style={this.state.active == year} />);
         return(
-            <div className={Styles.LaunchYears}>
-                <p> Launch Year </p> 
+            <div className={styles.container}>
+                <span className= {styles.header}> 
+                    Launch Year
+                    <div className={styles.borderBottom}></div> 
+                </span> 
                 {launchYears}
+            
             </div>
         );
     }

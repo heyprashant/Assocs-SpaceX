@@ -7,15 +7,21 @@ class Layout extends Component {
     
 
     render() {
-        return (<div className = {styles.Layout} >
-            <div><h1>SpaceX Launch Programs</h1></div>
+        return (
+        <div className = {styles.container} >
+            
+            <h1 className={styles.header}>SpaceX Launch Programs</h1>
+            
 
-            <div className = {styles.body}>
-             <Filters /> 
-             <LaunchPrograms />
-             </div>
-
-             <div className={styles.footer}>Developed by : Prashant</div>
+            <Filters />
+             <section>
+                 Launch Programs
+               <LaunchPrograms data={this.props.data} />
+             </section>
+             
+            <footer className={styles.footer}>
+                <p> <strong>Developed by :</strong>  Prashant </p>
+            </footer>
         </div>);
     }
 }

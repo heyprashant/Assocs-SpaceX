@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
-import Card from '../UI/Card/Card';
+import LaunchProgram from './LaunchProgram/LaunchProgram';
+import styles from './LaunchPrograms.module.css';
 
 class LaunchPrograms extends Component {
-    state = {
-        data: null
+    state= {
+        data: []
     }
-
+    componentDidMount() {
+        this.setState({
+            data: this.props.data
+        })
+        console.log(this.props.data);
+       
+    }
     render() {
-        return (<div>
-            <Card>
-            <p>LaunchPrograms</p>
-            </Card>
+        
+        // let programs = this.props.data.map( mission => <LaunchProgram key={mission.flight_number} flightNumber={mission.flight_number}  />)
+        return (<div className ={styles.LaunchPrograms}>
+                <LaunchProgram></LaunchProgram>
         </div>);
     }
 }
