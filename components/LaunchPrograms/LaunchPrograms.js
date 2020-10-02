@@ -18,7 +18,22 @@ class LaunchPrograms extends Component {
         // let programs = this.props.data.map( mission => <LaunchProgram key={mission.flight_number} flightNumber={mission.flight_number}  />)
         return (<
             div className ={styles.container}>
-                <LaunchProgram></LaunchProgram>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+                <LaunchProgram/>
+
         </div>);
     }
 }

@@ -1,10 +1,11 @@
+/* #f3f3f3 */
 .container {
     background-color: #f3f3f3;
     display: grid;
     grid-template-columns: 1.4fr 5fr;
     height: 100%;
     grid-column-gap: 13px ;    
-    
+    align-items: start;
 }
 .header {
     grid-column: span 2;
@@ -15,7 +16,8 @@
 
 .footer {
     grid-column: span 2;
-    margin: auto;
+    justify-self: center;
+    margin: 55px 0px 30px ;
 }
 
 @media only screen and (max-width: 700px) {
