@@ -15,24 +15,18 @@ class LaunchPrograms extends Component {
     }
     render() {
         
-        // let programs = this.props.data.map( mission => <LaunchProgram key={mission.flight_number} flightNumber={mission.flight_number}  />)
+        let programs = this.state.data.map( (item,index) => <LaunchProgram 
+                        key={index} 
+                        flightNumber={item.flight_number} 
+                        missionName={item.mission_name} 
+                        missionId={item.mission_id} 
+                        launchYear={item.launch_year}
+                        launchSuccess={item.launch_success}
+                        imageSrc={item.links.mission_patch} 
+                        launchLanding={item.launch_landing}/>)
         return (<
             div className ={styles.container}>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
-                <LaunchProgram/>
+               {programs}
 
         </div>);
     }

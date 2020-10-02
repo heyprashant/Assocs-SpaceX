@@ -5,19 +5,14 @@ import SuccessLaunch from './SuccessLaunch/SucessLaunch';
 import SuccessLanding from './SucessLanding/SucessLanding';
 
 class Filters extends Component {
-    state = {
-        launchYear: null,
-        launchSuccess: null,
-        landSuccess: null
-    }
 
     render() {
         return (
         <div className= {styles.container}>    
             <h2 className={styles.header}>Filters</h2>
-            <LaunchYears/>
-            <SuccessLaunch/>
-            <SuccessLanding/>
+            <LaunchYears yearHandler={this.props.launchYear}/>
+            <SuccessLaunch  SuccessHandler={this.props.launchSuccess} />
+            <SuccessLanding landHandler={this.props.landSuccess}/>
         </div>);
     }
 }
