@@ -19,7 +19,13 @@ function HomePage({data}) {
           font-weight: 600;
         }
         p {
-          margin-bottom: 10px;
+          margin: 0px;
+        }
+        b {
+          color: black;
+          font-size: 19px;
+          font-weight: 900;
+          font-family: Calibri ;
         }
       `}</style>
 

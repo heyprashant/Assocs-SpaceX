@@ -1,5 +1,5 @@
 .container {
-    background-color: #3333;
+    background-color: #f3f3f3;
     display: grid;
     grid-template-columns: 1.4fr 5fr;
     height: 100%;

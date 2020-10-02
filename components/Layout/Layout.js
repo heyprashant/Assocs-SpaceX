@@ -15,7 +15,6 @@ class Layout extends Component {
 
             <Filters />
              <section>
-                 Launch Programs
                <LaunchPrograms data={this.props.data} />
              </section>
              
