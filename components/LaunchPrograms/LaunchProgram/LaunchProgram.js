@@ -7,7 +7,6 @@ class LaunchProgram extends Component {
   render() {
     return (
       <div className={styles.container}>
-          {/* https://images2.imgbox.com/ab/6f/3l4ib2QW_o.png */}
           <img className={styles.img} 
             src= {this.props.imageSrc} />
 

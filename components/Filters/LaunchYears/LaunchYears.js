@@ -61,6 +61,7 @@ class LaunchYears extends Component {
 
     let launchYears = years.map((year) => (
       <Button
+        key={year}
         name={year}
         onClicked={() => this.onClickHandler(year)}
         style={this.state.active == year}
