@@ -5,6 +5,12 @@ import styles from './LaunchProgram.module.css';
 class LaunchProgram extends Component {
 
   render() {
+    let landingStatus=null;
+      switch(this.props.launchLanding) {
+        case null : landingStatus = '-'; break;
+        case false : landingStatus = 'False'; break;
+        case true : landingStatus = 'True'; break;
+      } 
     return (
       <div className={styles.container}>
           <img className={styles.img} 
@@ -20,7 +26,7 @@ class LaunchProgram extends Component {
           </ul>
           <p><b>Launch Year : </b> {this.props.launchYear} </p> 
           <p><b>Successful Launch: </b>{this.props.launchSuccess? "True" : "False"}</p>
-          <p><b>Successful Landing: </b>{this.props.launchLanding? "True" : "False" }</p>
+          <p><b>Successful Landing: </b>{landingStatus}</p>
           
           {/* <p>{this.props.flightNumber}</p>
           <p>{this.props.launchYear}</p>
