@@ -2,7 +2,7 @@
 .container {
     background-color: #f3f3f3;
     display: grid;
-    grid-template-columns: 1.4fr 5fr;
+    grid-template-columns: 1.2fr 5fr;
     height: 100%;
     grid-column-gap: 13px ;    
     align-items: start;

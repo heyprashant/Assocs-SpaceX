@@ -17,7 +17,7 @@ class LaunchPrograms extends Component {
                         launchLanding={this.props.successLanding}/>)
         return (<
             div className ={styles.container}>
-               {programs}
+                {programs} 
 
         </div>);
     }

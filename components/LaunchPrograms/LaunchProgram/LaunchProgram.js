@@ -28,10 +28,7 @@ class LaunchProgram extends Component {
           <p><b>Successful Launch: </b>{this.props.launchSuccess? "True" : "False"}</p>
           <p><b>Successful Landing: </b>{landingStatus}</p>
           
-          {/* <p>{this.props.flightNumber}</p>
-          <p>{this.props.launchYear}</p>
-          <p>{this.props.SuccesLaunch}</p>
-          <p>{this.props.SuccesLanding}</p> */}
+      
           </section>
       </div>
     );
