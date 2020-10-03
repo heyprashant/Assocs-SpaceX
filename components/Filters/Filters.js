@@ -12,7 +12,7 @@ class Filters extends Component {
             <h2 className={styles.header}>Filters</h2>
             <LaunchYears yearHandler={this.props.launchYear}/>
             <SuccessLaunch  SuccessHandler={this.props.launchSuccess} />
-            <SuccessLanding landHandler={this.props.landSuccess}/>
+            <SuccessLanding landHandler={this.props.landSuccess} disable={this.props.disable}/>
         </div>);
     }
 }

@@ -4,7 +4,11 @@ import Styles from './Button.module.css'
 const button = (props)=>{
 
     return (
-        <button className={props.style? Styles.active : Styles.btn}  onClick={props.onClicked}> {props.name} </button>
+        <button 
+            className={props.style && !props.disabled ? Styles.active : Styles.btn}
+            onClick={props.onClicked}
+            disabled={props.disabled}
+            > {props.name} </button>
         );
 }
 

@@ -26,8 +26,8 @@ class SuccesLand extends Component {
                     <div className={styles.borderBottom}></div> 
                 </span> 
 
-                <Button name="True" onClicked={()=>this.onClickHandler(true)} style={this.state.active} />
-                <Button name="False" onClicked={()=>this.onClickHandler(false)} style={this.state.active === false } />
+                <Button name="True" onClicked={()=>this.onClickHandler(true)} style={this.state.active} disabled={this.props.disable} />
+                <Button name="False" onClicked={()=>this.onClickHandler(false)} style={this.state.active === false } disabled={this.props.disable}/>
             </div>
         );
     }

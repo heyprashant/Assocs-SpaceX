@@ -74,6 +74,9 @@ class Layout extends Component {
 
   onChangeLaunchSuccessHanler = (success) => {
     this.setState({ launchSuccess: success });
+    if(!success) {
+        this.setState({ landSuccess : null})
+    }
   };
 
   onChangeLandSeccessHandler = (success) => {
@@ -88,14 +91,14 @@ class Layout extends Component {
           launchYear={this.onChangeYearHandler}
           launchSuccess={this.onChangeLaunchSuccessHanler}
           landSuccess={this.onChangeLandSeccessHandler}
+          disable={this.state.launchSuccess===false}
         />
         <section>
           <LaunchPrograms data={this.state.data} successLanding={this.state.landSuccess} />
         </section>
         <footer className={styles.footer}>
           <p>
-            {" "}
-            <strong>Developed by :</strong> Prashant{" "}
+            <strong>Developed by :</strong> Prashant
           </p>
         </footer>
       </div>
