@@ -14,12 +14,9 @@ class Layout extends Component {
       data: props.data,
     };
   }
-
-  // componentWillMount() {
-  //     this.setState(()=>({
-  //         data : this.props.data
-  //     }));
-  // }
+  componentDidMount() {
+    Router.replace(/.*/, "/");
+  }
 
   componentDidUpdate(prevProps, prevState) {
     if (
@@ -60,13 +57,12 @@ class Layout extends Component {
         )
           .then((res) => res.json())
           .then((data) => {
-            this.setState({ data: data }, () => {
-              console.log(`[componenetDidUpdaate]: Layout ${this.state.data}`);
-            });
+            this.setState({ data: data });
           });
       }
     }
   }
+  
 
   onChangeYearHandler = (year) => {
     this.setState({ launchYear: year });

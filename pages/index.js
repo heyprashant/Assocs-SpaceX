@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
 
+
 function HomePage({data}) {
     return (<div>
       <Layout data={data} />
