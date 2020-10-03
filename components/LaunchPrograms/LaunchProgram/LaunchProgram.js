@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Card from "../../UI/Card/Card";
 import styles from './LaunchProgram.module.css';
 
 class LaunchProgram extends Component {
