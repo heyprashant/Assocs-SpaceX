@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './Filters.module.css';
 import LaunchYears from './LaunchYears/LaunchYears';
 import SuccessLaunch from './SuccessLaunch/SucessLaunch';
-import SuccessLanding from './SucessLanding/SucessLanding';
+import SuccessLanding from './SuccessLanding/SucessLanding';
 
 class Filters extends Component {
 
