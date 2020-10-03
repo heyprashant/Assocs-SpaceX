@@ -3,6 +3,8 @@
 
 
 Assocs-SpaceX is Reactjs-Nextjs app, fetching data from SpaceX-Api. Initially performing Server Side Rendering for better perfomance and Search engine optimization.
+User should be able to Filter the results with help of provided Filters. Mobile first design approach.
+
 App hosted on [vercel](https://vercel.com/)
 
 Next.js is a framework that makes it easy to create 'universal' React apps - React apps that do both client and server side rendering.
