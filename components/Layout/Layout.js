@@ -15,7 +15,7 @@ class Layout extends Component {
     };
   }
   componentDidMount() {
-    Router.replace(/.*/, "/");
+    Router.replace(Router.pathname, "/");
   }
 
   componentDidUpdate(prevProps, prevState) {
