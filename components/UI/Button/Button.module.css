@@ -12,7 +12,7 @@
     font-size: medium;
 }
 
-.active, .btn:hover {
+.active, .btn:hover  {
     background-color:#7cba01;
     border-radius: 4px;
     border: honeydew;

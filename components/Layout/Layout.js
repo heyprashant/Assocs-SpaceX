@@ -97,9 +97,10 @@ class Layout extends Component {
           <LaunchPrograms data={this.state.data} successLanding={this.state.landSuccess} />
         </section>
         <footer className={styles.footer}>
-          <p>
-            <strong>Developed by :</strong> Prashant
-          </p>
+            Developed by: 
+            <p 
+              style={{ fontFamily:"Gabriola" , marginLeft:"10px", fontSize:"28px"}}>
+              Prashant </p>
         </footer>
       </div>
     );
