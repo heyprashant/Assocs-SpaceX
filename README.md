@@ -28,3 +28,18 @@ npm start
 ```
 You should run ```npm run build``` again any time you make changes to the site.
 
+## Screenshots
+
+Desktop-view
+
+<img src="Screenshots/desktop%20view.PNG"  width = "1000px"/>
+
+Tablet-view
+
+<img src="Screenshots/tablet%20view.PNG"  width = "800px"/>
+
+Mobile-view
+
+<img src="Screenshots/mobile%20view.PNG"  />
+
+
