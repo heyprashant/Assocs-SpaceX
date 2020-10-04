@@ -6,6 +6,7 @@
     height: 100%;
     grid-column-gap: 13px ;    
     align-items: start;
+    max-width: 1440px;
 }
 .header {
     grid-column: span 2;
@@ -41,5 +42,17 @@
         font-size: x-large;
         font-family: Franklin Gothic Medium, Arial Black;
         text-align: center;
+    }
+}
+@media (min-widht: 1440) {
+    .container {
+        background-color: #887272;
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 1.2fr 5fr;
+        height: 100%;
+        grid-column-gap: 13px ;    
+        align-items: start;
+        max-width: 1440px;
     }
 }
