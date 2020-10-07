@@ -2,7 +2,7 @@
 
 
 
-Assocs-SpaceX is Reactjs-Nextjs app, fetching data from SpaceX-Api. Initially performing Server Side Rendering for better perfomance and Search engine optimization.
+Assocs-SpaceX is Reactjs-Nextjs app, fetching data from SpaceX-Api. Initially performing Server Side Rendering for better performance and Search engine optimization.
 User should be able to Filter the results with help of provided Filters. Mobile first design approach.
 
 App hosted on [vercel](https://vercel.com/)
@@ -14,7 +14,7 @@ With Next.js, React pages are automatically rendered on both client and server s
 ## Running locally in development mode
 To get started, just clone the repository and run ```npm install && npm run dev```:
 ```
-git clone https://github.com/iaincollins/nextjs-starter.git
+git clone https://github.com/heyprashant/Assocs-SpaceX.git
 npm install
 npm run dev
 ```
